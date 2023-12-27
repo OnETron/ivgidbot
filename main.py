@@ -18,7 +18,7 @@ app = Client(
     api_id=api_id, api_hash=api_hash,
     bot_token=bot_token
 )
-admins = [1000531775]
+admins = []
 
 
 @app.on_message(filters.command(['main_menu', 'start']))
