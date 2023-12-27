@@ -8,14 +8,13 @@ from db import *
 
 #Здесь будут располагаться данные вашего бота.
 
-api_id = 27095605
-api_hash = '78ddcf137b8203b89570a0630c26ad95'
-bot_token = '6324699401:AAHeqcQCnr4mqx-28jllca6r0TGGPnoWWVw'
-
+api_id = 'API_ID'
+api_hash = 'API_HASH'
+bot_token = 'BOT_TOKEN'
 #В строке 'name' должно находиться название вашего бота.
 
 app = Client(
-    "ivgidbot",
+    "BOT_NAME",
     api_id=api_id, api_hash=api_hash,
     bot_token=bot_token
 )
