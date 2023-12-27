@@ -191,12 +191,12 @@ def delete_sight(bot, call, sight_id, categories_page, sights_page):
 
 
 def send_about(bot, call):
-    to_source_code = types.InlineKeyboardButton('Исходный код', url='https://github.com/awakair/ivanovogidbot')
+    to_source_code = types.InlineKeyboardButton('Исходный код', url='https://github.com/OnETron/ivgidbot')
     to_main_menu = types.InlineKeyboardButton('Назад', callback_data=to_callback_data({"section": 'to_main_menu'}))
     markup = types.InlineKeyboardMarkup([[to_source_code], [to_main_menu]])
 
     bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id, text=
-    'Вы не поверите, но я школьный проект одного 11-классника. Исходный код открыт, все дела',
+    'Я всего лишь скромный проект ученика 10А класса. Хочешь узнать обо мне побольше?\nИсходный код открыт!',
                           reply_markup=markup)
 
 
